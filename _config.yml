@@ -6,7 +6,7 @@ menu:
   Tags: tags  # 标签
   Repository: repository  # github repositories
   Books: books  # 豆瓣书单
-  Links: links  # 友链
+  # Links: links  # 友链
   About: about  # 关于
 
 # Enable/Disable menu icons
@@ -31,9 +31,9 @@ site:
     width: 40
     height: 40
     url: ../images/logo.png
-  title: Hexo # 页面title
+  title: 欢迎光临ksven的个人小站~ # 页面title
   favicon: /favicon.png
-  board: <p>欢迎交流与分享经验!</p> # 站点公告
+  board: <p>谢谢你来看我鸭</p> # 站点公告
   copyright: false # 底部版权信息
 
 # config
@@ -41,13 +41,13 @@ config:
   skin: # 主题颜色 theme-black theme-blue theme-green theme-purple
   layout: main-center # 布局方式 main-left main-center main-right
   toc: true # 是否开启文章章节目录导航
-  menu_highlight: false # 是否开启当前菜单高亮显示
-  thumbnail: false # enable posts thumbnail, options: true, false
+  menu_highlight: true # 是否开启当前菜单高亮显示
+  thumbnail: true # enable posts thumbnail, options: true, false
   excerpt_link: Read More
 
 # Pagination
 pagination:
-  number: false
+  number: true
   prev: 
     alwayShow: true
   next:
@@ -58,7 +58,7 @@ sidebar: right
 widgets:
   - board  
   - category
-  - tag
+  # - tag
   - tagcloud
   - archive
   - recent_posts
@@ -74,7 +74,7 @@ archive_type: 'monthly'
 show_count: true
 
 # Fancybox
-fancybox: false
+fancybox: true
 
 # Search
 search:
@@ -97,12 +97,12 @@ donate:
 # weibo,qq,qzone,wechat,tencent,douban,diandian,facebook,twitter,google,linkedin
 share:
   enable: true  # 是否启用分享
-  sites: weibo,qq,wechat,facebook,twitter  # PC端显示的分享图标
+  sites: weibo,qq,wechat # ,facebook,twitter  # PC端显示的分享图标
   mobile_sites: weibo,qq,qzone  # 移动端显示的分享图标
 
 # Github
 github: 
-  username: cofess  # github username
+  username: cxxcooker  # github username
 
 # Comment
 # Gitment
@@ -133,9 +133,9 @@ comment:
     verify: false # Verification code
     placeholder: Just go go # comment box placeholder
     avatar: mm # gravatar style
-    meta: nick,mail,link # custom comment header
+    meta: nick,mail # custom comment header
     pageSize: 10 # pagination size
-    visitor: false # Article reading statistic https://valine.js.org/visitor.html
+    visitor: true # Article reading statistic https://valine.js.org/visitor.html
 
 # douban 豆瓣书单
 # Api：
@@ -149,22 +149,22 @@ comment:
   # https://api.douban.com/v2/movie/subject/:id 单个电影信息
   # https://api.douban.com/v2/movie/search?q={text} 电影搜索
 douban:
-  user: # 豆瓣用户名
+  user: 庄老十 # 豆瓣用户名
   start: 0 # 从哪一条记录开始
   count: 100 # 获取豆瓣书单数据条数
   
 # PV
 pv:
   busuanzi:
-    enable: false  # 不蒜子统计
+    enable: true  # 不蒜子统计
   leancloud:
-    enable: false  # leancloud统计
+    enable: true  # leancloud统计
     app_id: # leancloud <AppID>
     app_key: # leancloud <AppKey>
         
 # wordcount
 postCount:
-  enable: false
+  enable: true
   wordcount: true  # 文章字数统计
   min2read: true  # 阅读时长预计 
 
@@ -184,52 +184,45 @@ fb_app_id:
 # profile
 profile:
   enabled: true # Whether to show profile bar
-  avatar: images/avatar.jpg
+  avatar: images/profile_picture.jpg
   gravatar: # Gravatar email address, if you enable Gravatar, your avatar config will be overriden
-  author: 昵称
-  author_title: Web Developer & Designer
-  author_description: 个人简介。
-  location: Shenzhen, China
-  follow: https://github.com/cofess
+  author: 牛强
+  author_title: cpp engineer @ didi AIP
+  author_description: 慎思笃行
+  location: Beijing, China
+  follow: https://github.com/cxxcooker
   # Social Links
   social:
     links:
-      github: https://github.com/cofess
-      weibo: http://weibo.com/cofess
-      twitter: https://twitter.com/iwebued
+      github: https://github.com/cxxcooker
+      weibo: http://weibo.com/u/2994571545
+      # twitter: https://twitter.com/iwebued
       # facebook: /
       # dribbble: /
-      behance: https://www.behance.net/cofess
+      # behance: https://www.behance.net/cofess
       rss: atom.xml
     link_tooltip: true # enable the social link tooltip, options: true, false
   # My Skills 
   skills:
-    Git: ★★★☆☆
-    Gulp: ★★★☆☆
-    Javascript: ★★★☆☆
-    HTML+CSS: ★★★☆☆
-    Bootstrap: ★★★☆☆
-    ThinkPHP: ★★★☆☆
-    平面设计: ★★★☆☆
+    CPP: ★★★
   # My Personal Links
   links:
-    Github: https://github.com/cofess
-    Blog: http://blog.cofess.com
-    微博: http://weibo.com/cofess
-    花瓣: http://huaban.com/cofess
-    Behance: https://www.behance.net/cofess
+    Github: https://github.com/cxxcooker
+    # Blog: http://blog.cofess.com
+    微博: http://weibo.com/u/2994571545
+    # 花瓣: http://huaban.com/cofess
+    # Behance: https://www.behance.net/cofess
   # My Personal Labels
   labels:
-    - 前端
-    - 前端开发
-    - 前端重构
-    - Web前端
-    - 网页重构
+    - CPP
+    - HTTP 
+    - THRIFT
+    - SERVER
   # My Personal Works
   works:
-    name:
-      link: http://www.example.com
-      date: 2016
+    github:
+      link: https://github.com/cxxcooker
+      date: 2020
   # My Personal Projects
   projects:
     cofess/gulp-startpro: https://github.com/cofess/gulp-startpro
