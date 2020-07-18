@@ -12,6 +12,7 @@
 	bodyClass = page.sidebar === 'none' ? (bodyClass + ' no-sidebar') : bodyClass;
 %>
 <body class="<%= bodyClass %>" itemscope itemtype="http://schema.org/WebPage">
+  <script type="text/javascript" src="/js/click2love.js"></script>
   <%- partial('_common/header', null, {cache: !config.relative_link}) %>
   <% if (theme.sidebar && (page.sidebar!='none' || page.sidebar!='custom')){ %>
     <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
